@@ -4,7 +4,7 @@ from nltk.corpus import stopwords
 from textblob import TextBlob
 
 def get_restaurant_specifics(Business_name):
-    yelp_api = YelpAPI(api_key='KnfmV9riCNt_4Pl1iNFGwBZIQhr6Vh7baEqDzIae5LSLXEQX_JeKBQLK6vuSxbzAO43M5x9zyO8sc9HmNdN34kUEYEklUxlKshrALdyT7HVhEDBvYqjlmeKPZrdxW3Yx')
+    yelp_api = YelpAPI(api_key='')
     search_results = yelp_api.search_query(term=Business_name, location='New York, NY')
 
     rating = []
