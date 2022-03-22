@@ -3,8 +3,8 @@ import pymysql
 from yelpapi import YelpAPI
 
 def get_restaurant_details(Business_name):
-    db = pymysql.connect(host="localhost", user="root", password="linchpin@1", db="Linchpin_Coach")
-    yelp_api = YelpAPI(api_key='KnfmV9riCNt_4Pl1iNFGwBZIQhr6Vh7baEqDzIae5LSLXEQX_JeKBQLK6vuSxbzAO43M5x9zyO8sc9HmNdN34kUEYEklUxlKshrALdyT7HVhEDBvYqjlmeKPZrdxW3Yx')
+    db = pymysql.connect(host="localhost", user="", password="", db="")
+    yelp_api = YelpAPI(api_key='')
     Restaurant_Data = pd.read_csv("Restaurant_Data.csv")
 
     cur1 = db.cursor()
